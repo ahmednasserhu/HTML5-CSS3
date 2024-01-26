@@ -1,0 +1,55 @@
+#map {
+    height: 400px;
+    width: 50%;
+  }
+  html,
+  body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    width: fit-content;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .button-container {
+    display: flex;
+    gap: 10px;
+  }
+  button {
+    background-color: #4caf50;
+    border-radius: 10px;
+    border: 1px solid green;
+    color: white;
+    width: 127px;
+    padding: 5px;
+    cursor: pointer;
+  }
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+  }
+  table th {
+    background-color: #4caf50;
+    color: white;
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+  }
+  th,
+  td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+  }
+  #map-info {
+    text-align: center;
+    margin-top: 10px;
+  }

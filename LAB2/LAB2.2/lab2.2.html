@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <input id="color" type="color" />
+        <button id="draw" onclick="draw()">Draw</button>
+    </div>
+    <canvas id="myCanvas" width="500" height="500" style="background-color: cadetblue;"></canvas>
+    <script>
+        let color = document.getElementById("color");
+        let canvas = document.getElementById("myCanvas");
+        let ctx = canvas.getContext("2d");
+
+        function draw() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            for (let i = 0; i < 100; i++) {
+                ctx.beginPath();
+                var x = Math.floor(Math.random() * canvas.width);
+                var y = Math.floor(Math.random() * canvas.height);
+                ctx.fillStyle = color.value;
+                ctx.strokeStyle = color.value;
+                ctx.arc(x, y, 30, 0, Math.PI * 2);
+                ctx.stroke();
+            }
+        }
+    </script>
+</body>
+</html>
